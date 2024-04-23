@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+
 public class Visit
 {
 //    @Id
@@ -16,7 +17,7 @@ public class Visit
     //attorneyId
     //clientId
     //optional caseId
-    //enum status
+    //enum status {FREE, BOOKED, PENDING, FINISHED}
 
     private LocalDate date;
     private LocalTime time;

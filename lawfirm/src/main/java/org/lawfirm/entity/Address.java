@@ -9,7 +9,6 @@ public class Address
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int addressId;
 
-
     @Column(length = 15, nullable = false)
     private String country;
     @Column(length = 7, nullable = false)
