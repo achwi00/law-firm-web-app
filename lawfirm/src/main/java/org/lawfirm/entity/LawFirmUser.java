@@ -9,21 +9,28 @@ public abstract class LawFirmUser
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    //possibly a seperate account class?
+    //other suggested attributes:
+    //account status(like active, inactive, suspended), last logged in time, role or permissions, salt for password hashing,
+
+    @Column(length = 20, nullable = false)
+    private String password;
+
     @Column(length = 40, nullable = false)
     private String email;
-    @Column(length = 20, nullable = false)
+    @Column(length = 20)
     private String name;
-    @Column(length = 30, nullable = false)
+    @Column(length = 30)
     private String surname;
     @Column(length = 17, nullable = false)
     private String phoneNum;
 
-    protected LawFirmUser(){};
-    public LawFirmUser(String email, String name, String surname, String phoneNum)
+    protected LawFirmUser(){}
+
+    public LawFirmUser(String password, String email, String phoneNum)
     {
+        this.password = password;
         this.email = email;
-        this.name = name;
-        this.surname = surname;
         this.phoneNum = phoneNum;
     }
 
@@ -66,4 +73,6 @@ public abstract class LawFirmUser
     {
         this.phoneNum = phoneNum;
     }
+
+
 }
