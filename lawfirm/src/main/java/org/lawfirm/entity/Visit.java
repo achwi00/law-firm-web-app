@@ -20,8 +20,10 @@ public class Visit
     @JoinColumn(name = "clientId", referencedColumnName = "id")
     private Client client;
 
-    //optional caseId
-    //enum status {FREE, BOOKED, PENDING, FINISHED}
+    @ManyToOne
+    @JoinColumn(name = "caseId", referencedColumnName = "caseId", nullable = true)
+    private LegalCase legalCase;
+
     private enum Status{
         FREE, BOOKED, PENDING, FINISHED;
     }
