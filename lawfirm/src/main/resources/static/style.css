@@ -1,0 +1,382 @@
+:root {
+    --lightgray: #e9ebec;
+    --darkgray: #729fcb;
+    --blue: #E9F0F7;
+    --darkblue: #172c40;
+    --midblue: #c4d7e9;
+    --orange: #FFA500;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family:  Inter, sans-serif;
+}
+h1, h2{
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav{
+    position:sticky;
+    top:0;
+    width: 100%;
+    height: 11vh;
+    z-index: 2;
+    box-shadow: 0px 1px 2px 0px var(--blue);
+}
+.centring-orange{
+    height: 100%;
+    width: 92%;
+    background-color: var(--orange);
+}
+.centring-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.long-column{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.long-row{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+#contact-info{
+    height: 24%;
+    background-color: white;
+}
+#menu{
+    height: 76%;
+    background-color: white;
+}
+#inner-menu{
+    width: 92%;
+}
+#options{
+    align-items: center;
+    width: 60%;
+}
+#options ul, .nav-element{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    list-style-type: none;
+    color: black;
+}
+.nav-element:hover{
+    transform: scale(1.1);
+    color: var(--darkgray);
+}
+#logo-holder{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+#baner{
+    display: flex;
+    flex-direction: row;
+    height: 85vh;
+    width: 100%;
+    background-color:  var(--darkgray);
+}
+#left-baner{
+    width: 70%;
+    height: 100%;
+    background-image: url("luke-michael-resized-smaller.jpg");
+    background-size: cover;
+}
+#right-baner{
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 26%;
+}
+#overlay-text{
+    position: relative;
+    right: 40%;
+    margin-top: 20%;
+    font-size: 2.5rem;
+
+}
+.holder{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+.small-holder{
+    height: 6vh;
+}
+#contact-holder{
+    height: 85vh;
+    background-color: white;
+}
+#bottom-contact-holder{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 40vh;
+    top: -10vh;
+    z-index: 1;
+}
+#center-bottom-holder{
+    justify-content: space-between;
+    width: 80%;
+}
+.contact-twins{
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: var(--darkgray);
+    border-radius: 5px;
+}
+.contact-twins h1{
+    color: var(--darkblue);
+    margin-top: 1%;
+    font-size: 3vh;
+}
+.contact-twins p{
+    text-align: center;
+    width: 75%;
+}
+.contact-twins h2{
+    text-align: center;
+}
+.dot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: white;
+    font-size: 1.5rem;
+}
+#contact-content{
+    margin-bottom: 3%;
+}
+.phone-mail{
+    font-size: 1.2rem;
+    color: var(--darkblue);
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+.phone-mail:hover{
+    text-decoration: underline;
+}
+.info-stripe{
+    height: 50vh;
+    width: 100%;
+    background-color: var(--blue);
+}
+#need-help{
+    display: flex;
+    flex-direction: row;
+}
+#help-info{
+    width: 60%;
+}
+#help-info h1, h2{
+    margin-left: 4%;
+    font-weight: normal;
+    width: 70%;
+}
+#help-info h1{
+    font-size: 1.9rem;
+    margin-top: 7%;
+}
+#help-info h2{
+    font-size: 1.2rem;
+}
+#help-info hr{
+    margin-left: 0;
+    width: 60%;
+}
+#help-img{
+    height: 100%;
+    width: 40%;
+    background-color: var(--darkgray);
+    background-image: url("legal1.jpg");
+    background-size: cover;
+}
+#triangle{
+    height: 0;
+    width: 0;
+    border-bottom: 50vh solid var(--blue);
+    border-right: 35vh solid transparent;
+}
+#big-holder{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+#center-spec-holder{
+    justify-content: flex-start;
+    align-items: center;
+    width: 92%;
+}
+#center-spec-holder h1{
+    font-size: 1.5rem;
+}
+#center-spec-holder hr{
+    margin-top: 2%;
+    margin-bottom: 0;
+    width: 100%;
+}
+#specialization-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90%;
+    width: 100%;
+}
+.specialization-stripe{
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    width: 100%;
+}
+.specialization-right{
+    justify-content: flex-end;
+}
+.specialization{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 60%;
+    background-color: var(--blue);
+}
+.specialization h2{
+    width: 20%;
+    color: var(--darkgray);
+}
+.spec-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5%;
+    color: var(--darkblue);
+}
+#spec-header{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--darkblue);
+}
+.read-more-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+#carousel-stripe{
+    background-color: var(--darkgray);
+}
+#carousel-holder{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#carousel-holder iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 18vh;
+    width: 100%;
+    background-color: var(--midblue);
+}
+
+#footer-info{
+    height: 80%;
+}
+#footer-center-info{
+    width: 92%;
+}
+.footer-column{
+    justify-content: center;
+}
+.footer-column h1{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.footer-column p{
+    color: var(--darkblue);
+    font-size: 0.8rem;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+.socials, .socials a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+    width: 30%;
+    color: white;
+    font-size: 1.5rem;
+}
+.socials a:hover{
+    color: var(--orange);
+}
+#footer-bottom{
+    height: 20%;
+    background-color: white;
+}
+input{
+    border: none;
+    border-radius: 2px;
+    background-color: var(--lightgray);
+}
+/*buttons*/
+.btn{
+    background-color: var(--orange);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+}
+.btn:hover{
+    background-color: rgb(223, 137, 45);
+    transform: scale(0.9);
+}
+.full-btn{
+    height: 100%;
+    width: 100%;
+}
+.read-more{
+    height: 4vh;
+    width: 50%;
+}
+#log-in-menu-link{
+    height: 4vh;
+    width: 15%;
+}
+#register-link{
+    margin-top: 2%;
+    height: 4vh;
+    width: 40%;
+}
+#baner-link{
+    height: 5vh;
+    width: 60%;
+    margin-top: 10%;
+}

@@ -1,0 +1,72 @@
+:root {
+    --lightgray: #e9ebec;
+    --darkgray: #729fcb;
+    --blue: #E9F0F7;
+    --darkblue: #172c40;
+    --midblue: #c4d7e9;
+    --orange: #FFA500;
+}
+body{
+    background-color: var(--darkgray);
+    height: 100vh;
+
+}
+#meet-team-carousel{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.slide{
+    display: flex;
+    justify-content: center;
+}
+.carousel-inner{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+}
+.carousel-item{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.carousel-item.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.specialist-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60vw;
+    height: 75vh;
+    background-color: var(--darkgray);
+}
+.specialist-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: calc(30%);
+    background-color: var(--darkgray);
+   
+}
+.specialist-column h1{
+    font-size: 1.4rem;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 70%;
+    width: 100%;
+    background-color: var(--midblue);
+    color: var(--blue);
+    font-size: 12rem;
+    border-radius: 3px;
+}
