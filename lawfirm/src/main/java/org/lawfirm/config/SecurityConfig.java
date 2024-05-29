@@ -19,7 +19,7 @@ public class SecurityConfig{
                         .requestMatchers("/myAccount").authenticated()
                         .anyRequest().permitAll()
                 )
-                .formLogin(withDefaults())
+                .formLogin(login -> login.loginPage("/log").permitAll())
                 .httpBasic(withDefaults());
 
 
