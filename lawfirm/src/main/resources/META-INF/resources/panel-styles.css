@@ -1,0 +1,130 @@
+:root {
+    --lightgray: white;
+    --darkgray: #729fcb;
+    --blue: #E9F0F7;
+    --orange: #FFA500;
+}
+.column-content{
+    display: flex;
+    flex-direction: column;
+}
+.row-content{
+    display: flex;
+    flex-direction: row;
+}
+#log-register-holder{
+    height: 72vh;
+    width: 100%;
+    background-color:  var(--blue);
+}
+#log-register-left{
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    background-color: var(--darkgray);
+}
+.login-holder{
+    height: 100%;
+    width: 74%;
+}
+#login-form{
+    height: 40%;
+    margin-top: 40%;
+    
+}
+.input-holder{
+    margin-bottom: 5%;
+}
+#log-btn-holder{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+input{
+    border: none;
+    border-radius: 2px;
+    margin-top: 1%;
+    background-color: var(--lightgray);
+}
+input:focus{
+    outline-color: var(--orange);
+}
+.input-box{
+    height: 3.5vh;
+    width: 100%;
+}
+.register-input{
+    height: 4.3vh;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+#register-all-inputs-holder{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+}
+#log-register-right{
+    height: 100%;
+    width: 70%;
+    background-image: url("luke-michael-resized-smaller.jpg");
+    background-size: cover;
+}
+
+#login-info{
+    margin-left: 10%;
+    margin-top: 9%;
+    height: 80%;
+    width: 90%;
+}
+.large-message{
+    font-size: 4vh;
+}
+.medium-message{
+    width: 40%;
+}
+.small-message{
+    margin-top: 4%;
+}
+.small-message a{
+    text-decoration: none;
+    color: var(--orange);
+}
+.small-message a:hover{
+    text-decoration: underline;
+}
+footer{
+    width: 100%;
+    height: 17vh;
+    background-color: var(--lightgray);
+}
+/*register specific*/
+#register-message{
+    height: 80%;
+    margin-top: 30%;
+}
+#register-form-holder{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#register-form{
+    width: 80%;
+}
+.register-input-holder{
+    width: 45%;
+}
+/*buttons*/
+#log-in{
+    height: 5vh;
+    width: 60%;
+}
+#registration-btn{
+    margin-top: 4%;
+    height: 4vh;
+    width: 25%;
+}
+.footer-column h1, .socials a{
+    color: var(--darkgray);
+}
