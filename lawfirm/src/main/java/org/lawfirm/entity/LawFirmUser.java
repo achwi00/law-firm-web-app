@@ -25,6 +25,9 @@ public abstract class LawFirmUser
     @Column(length = 17, nullable = false)
     private String phoneNum;
 
+
+
+
     protected LawFirmUser(){}
 
     public LawFirmUser(String password, String email, String phoneNum)
@@ -32,6 +35,16 @@ public abstract class LawFirmUser
         this.password = password;
         this.email = email;
         this.phoneNum = phoneNum;
+    }
+
+    public String getPassword()
+    {
+        return password;
+    }
+
+    public void setPassword(String password)
+    {
+        this.password = password;
     }
 
     public String getEmail()
