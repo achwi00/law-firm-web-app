@@ -63,7 +63,7 @@ nav{
 }
 #options{
     align-items: center;
-    width: 60%;
+    width: 80%;
 }
 #options ul, .nav-element{
     display: flex;
@@ -82,7 +82,7 @@ nav{
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    width: 40%;
+    width: 20%;
 }
 #baner{
     display: flex;
@@ -148,6 +148,7 @@ nav{
 .contact-twins p{
     text-align: center;
     width: 75%;
+    font-size: 0.8rem;
 }
 .contact-twins h2{
     text-align: center;
@@ -197,7 +198,7 @@ nav{
     margin-top: 7%;
 }
 #help-info h2{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 #help-info hr{
     margin-left: 0;
@@ -361,6 +362,7 @@ input{
 .full-btn{
     height: 100%;
     width: 100%;
+    min-width:100px;
 }
 .read-more{
     height: 4vh;
